@@ -1,10 +1,10 @@
-package com.traval.qa.utility;
+package com.traval.qa.utility ;
 
-import java.time.Duration;
+import com.traval.qa.base.TestBaseGD;
 
-public class TestUtilGD {
-	public static long PAGE_LOAD_TIMEOUT =20;
-	public static long IMPLICITE_WAIT=10;
-	int time=1000;
+public class TestUtilGD extends TestBaseGD {
+	public static long PAGE_LOAD_TIMEOUT =50;
+	public static long IMPLICITE_WAIT=20;
+	
 	
 }

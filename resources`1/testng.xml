@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GOTO TRAVAL TESTING">
+
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test name="first Test for Ticket">
+		<classes>
+			<class name="com.traval.qa.test.SearchHotelTest">
+				<methods>
+					<include name="setup"></include>
+					<include name="Validate_HomePage_Title"></include>
+					<include name="ValidataBy_AddingRequirment_InHomePage"></include>
+					<include name="Validateby_Requirments_Matchingin_ListingPage_FromHomePage"></include>
+					<exclude name="Edit_Requirments_InListingPage"></exclude>
+					<exclude name="Validate_Hotelpage_bycheckingrequirment_FromHomePage"></exclude>
+					<exclude name="Validate_Hotelpage_bycheckingrequirment_FromListingPage"></exclude>
+					<exclude name="Validate_Hotelpageby_checkingrequirment_From_EditedListingPage"></exclude>
+					<exclude name="Byadding_Detailsand_ItineraryPageandConfirm"></exclude>
+					<exclude name="SucessFul_MassageConfirmation"></exclude>			
+				</methods>						
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.traval.qa.test.HotelLisitngTest">
+      <class name="com.traval.qa.test.SearchHotelTest">
         <methods>
-          <include name="ValidateHomePageTitle"/>
+          <include name="Teardown"/>
           <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="Validate_Hotelpage_bycheckingrequirment_FromHomePage"/>
+          <include name="Validateby_Requirments_Matchingin_ListingPage_FromHomePage"/>
+          <include name="Validate_Hotelpageby_checkingrequirment_From_EditedListingPage"/>
+          <include name="Edit_Requirments_InListingPage"/>
+          <include name="SucessFul_MassageConfirmation"/>
+          <include name="Byadding_Detailsand_ItineraryPageandConfirm"/>
+          <include name="Validate_Hotelpage_bycheckingrequirment_FromListingPage"/>
         </methods>
-      </class> <!-- com.traval.qa.test.HotelLisitngTest -->
+      </class> <!-- com.traval.qa.test.SearchHotelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
