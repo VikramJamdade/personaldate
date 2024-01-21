@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import com.traval.qa.base.TestBaseGD;
 import com.traval.qa.confiq.ConfigureProperties;
+import com.traval.qa.confiq.Convertersfiles;
 import com.traval.qa.pages.SearchHotels;
 
 public class SearchHotelTest extends TestBaseGD {
@@ -46,6 +47,7 @@ public class SearchHotelTest extends TestBaseGD {
 	{
         searchhotels.AddingRequirment(ConfigureProperties.Location);
         implicitewait();
+        
         
         searchhotels.HomePageserchClick();
         

@@ -12,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.traval.qa.base.TestBaseGD;
 import com.traval.qa.confiq.ConfigureProperties;
+import com.traval.qa.confiq.Convertersfiles;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -217,8 +218,9 @@ public class SearchHotels extends TestBaseGD
 		System.out.println("Entered Date" + "=" + HomepageCheckIn);
 		String HomepageCheckout = driver.findElement(By.xpath("//input[@id='checkoutForm2']")).getAttribute("value");
 		System.out.println("Entered Date" + "=" + HomepageCheckout);
+		Convertersfiles ca= new Convertersfiles();
 		
-		 
+		
 
 		// Add the adult count and get text
 		PlusAdultcount.click();
